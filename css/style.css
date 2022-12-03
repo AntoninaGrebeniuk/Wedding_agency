@@ -168,3 +168,63 @@ img {
   border: 1px solid #F7941E;
   border-radius: 4px;
 }
+
+/* Post section */
+
+.post{
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.post-title{
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.18;
+  
+  
+  text-align: center;
+  color: #000000;
+}
+
+.post-text{
+font-size: 18px;
+line-height: 1.36;
+
+margin-bottom: 57px;
+text-align: center;
+color: #000000;
+}
+
+.post-list{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.post-list .item{
+  background-color: #FAFAFA;
+}
+
+.post-list .item:hover,
+.post-list .item:focus{
+  background-color: #ffffff;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+}
+
+
+.post-box{
+  padding: 24px;
+}
+
+.post-box-title{
+  margin-bottom: 74px;
+}
+
+.post-box-link{
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.35;
+
+color: #000000;
+}
