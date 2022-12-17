@@ -1,0 +1,37 @@
+.header {
+  display: flex;
+  align-items: center;
+  background: #fafafa;
+
+  &__list {
+    display: flex;
+    margin-left: 420px;
+  }
+
+  &__item:not(:first-child) {
+    margin-left: 31px;
+  }
+
+  &__link {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+  }
+
+  &__btn {
+    margin-left: 370px;
+    padding: 13px 20px;
+    background-color: transparent;
+    border: 1px solid #f7941e;
+    color: #f7941e;
+    border-radius: 5px;
+
+    &:hover,
+    &:focus {
+      color: #ffffff;
+      background-color: #f7941e;
+      border-color: transparent;
+    }
+  }
+}
