@@ -14,8 +14,7 @@
 
   &__link {
     font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    line-height: 22px;
+    @include font(18, 1.22, none);
     color: #000000;
   }
 

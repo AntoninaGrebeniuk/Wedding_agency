@@ -15,25 +15,20 @@
   &__title {
     margin: 0;
     width: 430px;
-
-    font-size: 56px;
-    line-height: 1.23;
+    @include font(56, 1.23, none);
   }
 
   &__text {
     margin-top: 36px;
     margin-bottom: 0;
     width: 430px;
-
-    font-size: 20px;
-    line-height: 1.4;
+    @include font(20, 1.4, none);
   }
 
   &__button {
     margin-top: 52px;
 
-    font-size: 18px;
-    line-height: 1.22;
+    @include font(18, 1.22, none);
 
     display: flex;
     width: 200px;

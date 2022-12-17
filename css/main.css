@@ -35,7 +35,8 @@ img {
 .header__link {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 1.22;
+  letter-spacing: noneem;
   color: #000000;
 }
 .header__btn {
@@ -79,6 +80,7 @@ img {
   width: 430px;
   font-size: 56px;
   line-height: 1.23;
+  letter-spacing: noneem;
 }
 .hero__text {
   margin-top: 36px;
@@ -86,11 +88,13 @@ img {
   width: 430px;
   font-size: 20px;
   line-height: 1.4;
+  letter-spacing: noneem;
 }
 .hero__button {
   margin-top: 52px;
   font-size: 18px;
   line-height: 1.22;
+  letter-spacing: noneem;
   display: flex;
   width: 200px;
   height: 60px;
@@ -126,9 +130,10 @@ img {
 .feature__title {
   margin-top: 0;
   margin-bottom: 23px;
-  font-weight: 400;
   font-size: 32px;
   line-height: 1.4;
+  letter-spacing: noneem;
+  font-weight: 400;
 }
 .feature__text {
   margin: 0;
@@ -136,12 +141,14 @@ img {
   width: 440px;
   font-size: 20px;
   line-height: 1.4;
+  letter-spacing: noneem;
   text-align: justify;
 }
 .feature__button {
   margin-top: 52px;
   font-size: 18px;
   line-height: 1.35;
+  letter-spacing: noneem;
   display: flex;
   width: 200px;
   height: 60px;
@@ -167,12 +174,14 @@ img {
   font-weight: 400;
   font-size: 32px;
   line-height: 1.18;
+  letter-spacing: noneem;
   text-align: center;
   color: #000000;
 }
 .post__text {
   font-size: 18px;
   line-height: 1.36;
+  letter-spacing: noneem;
   margin-bottom: 57px;
   text-align: center;
   color: #000000;
@@ -183,10 +192,9 @@ img {
   gap: 30px;
 }
 .post__link {
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.35;
+  letter-spacing: noneem;
   color: #000000;
 }
 

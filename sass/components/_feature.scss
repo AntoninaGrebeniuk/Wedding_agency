@@ -16,28 +16,22 @@
   &__title {
     margin-top: 0;
     margin-bottom: 23px;
-
+    @include font(32, 1.4, none);
     font-weight: 400;
-    font-size: 32px;
-    line-height: 1.4;
   }
 
   &__text {
     margin: 0;
     margin-bottom: 32px;
     width: 440px;
-
-    font-size: 20px;
-    line-height: 1.4;
+    @include font(20, 1.4, none);
 
     text-align: justify;
   }
 
   &__button {
     margin-top: 52px;
-
-    font-size: 18px;
-    line-height: 1.35;
+    @include font(18, 1.35, none);
 
     display: flex;
     width: 200px;
