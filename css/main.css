@@ -13,21 +13,45 @@ img {
 }
 
 .container {
-  width: 1440px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1440px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .header {
   display: flex;
   align-items: center;
   background: #fafafa;
+  position: relative;
 }
 .header__list {
   display: flex;
   margin-left: 420px;
+}
+@media screen and (max-width: 767.98px) {
+  .header__list {
+    display: none;
+  }
 }
 .header__item:not(:first-child) {
   margin-left: 31px;
@@ -47,20 +71,110 @@ img {
   color: #f7941e;
   border-radius: 5px;
 }
+@media screen and (max-width: 767.98px) {
+  .header__btn {
+    display: none;
+  }
+}
 .header__btn:hover, .header__btn:focus {
   color: #ffffff;
   background-color: #f7941e;
   border-color: transparent;
 }
 
-.logo {
-  margin-left: 80px;
-  padding-top: 39px;
-  padding-bottom: 39px;
+.menu-button .icon-close {
+  display: none;
+}
+
+.menu-button.is-open .icon-close {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.menu-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: block;
+  margin-right: 0;
+  margin-left: auto;
+  z-index: 4;
+  border: 0;
+  background-color: transparent;
+}
+
+.mobile-menu.is-open {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.mobile-menu.is-open .header__btn {
+  display: block;
+  margin: 0 auto;
+}
+
+.mobile-menu {
+  display: none;
+  padding: 30px;
+}
+
+.mobile-list {
+  text-align: center;
+}
+
+.mobile-list__link {
+  font-family: "Gilroy";
+  font-size: 24px;
+  line-height: 1.22;
+  color: #000000;
+}
+
+.mobile-list__link:hover,
+.mobile-list__link:focus {
+  color: #f7941e;
+}
+
+.mobile-list__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.logo_mobile {
   font-family: "Homemade Apple", cursive;
   color: #231f20;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-size: 18px;
   line-height: 2.1666666667;
+  margin: 0 auto;
+}
+
+.logo {
+  font-family: "Homemade Apple", cursive;
+  color: #231f20;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 20px;
+  font-size: 12px;
+  line-height: 3.25;
+}
+@media screen and (min-width: 767.98px) {
+  .logo {
+    padding-top: 39px;
+    padding-bottom: 39px;
+    margin-left: 80px;
+    font-size: 18px;
+    line-height: 2.1666666667;
+  }
 }
 
 .hero {

@@ -24,17 +24,35 @@
   <body>
     <header class="container header">
       <a href="./index.html" class="logo">logo</a>
+      <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+        <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+          <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
+          <use class="icon-close" href="./images/symbol-defs.svg#icon-close"></use>
+        </svg>
+      </button>
       <nav class="header__nav">
         <ul class="header__list">
           <li class="header__item"><a href="" class="header__link link">Home</a></li>
           <li class="header__item"><a href="" class="header__link link">About Us</a></li>
-          <li class="header__item"><a href="" class="header__link">Services</a></li>
+          <li class="header__item"><a href="" class="header__link link">Services</a></li>
           <li class="header__item"><a href="" class="header__link link">Blogs</a></li>
         </ul>
       </nav>
+      <div class="mobile-menu" data-menu>
+        <a href="./index.html" class="logo_mobile">logo</a>
+        
+      <ul class="mobile-list">
+        <li class="mobile-list__item"><a href="" class="mobile-list__link link">Home</a></li>
+        <li class="mobile-list__item"><a href="" class="mobile-list__link link">About Us</a></li>
+        <li class="mobile-list__item"><a href="" class="mobile-list__link link">Services</a></li>
+        <li class="mobile-list__item"><a href="" class="mobile-list__link link">Blogs</a></li>
+      </ul>
+      <button type="button" class="header__btn">Gift Finder</button>
+      
+      </div>
       <button type="button" class="header__btn">Gift Finder</button>
     </header>
-    <main>
+    <!-- <main>
       <section class="container hero">
         <div class="hero__box">
           <h1 class="hero__title">Find a gift for your wife or girlfriend</h1>
@@ -97,6 +115,7 @@
           </li>
         </ul>
       </section>
-    </main>
+    </main> -->
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
