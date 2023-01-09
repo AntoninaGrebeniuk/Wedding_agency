@@ -2,10 +2,14 @@
   display: flex;
   align-items: center;
   background: #fafafa;
+  position: relative;
 
   &__list {
     display: flex;
     margin-left: 420px;
+    @media screen and (max-width: 767.98px) {
+    display: none;      
+    }
   }
 
   &__item:not(:first-child) {
@@ -25,6 +29,9 @@
     border: 1px solid #f7941e;
     color: #f7941e;
     border-radius: 5px;
+    @media screen and (max-width: 767.98px) {
+      display: none;      
+    }
 
     &:hover,
     &:focus {
